@@ -1,34 +1,47 @@
+import Image from "next/image";
+
 type CardProps = {
   image: string;
   name: string;
   technologies: string[];
-  description: string; // Nuevo campo de descripción
+  technologies_img_url: string[];
+  description: string;
   github: string;
   demo: string;
 };
 
-function Card({ image, name, technologies, description, github, demo }: CardProps) {
+function Card({ image, name, technologies, technologies_img_url, description, github, demo }: CardProps) {
   return (
-    <article className="bg-gradient-to-b from-gray-800 to-gray-900 text-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl">
+    <article className="flex flex-col md:flex-row bg-gradient-to-r from-gray-800 to-gray-900 text-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl">
       {/* Imagen del proyecto */}
-      <div className="relative">
+      <div className="relative w-full md:w-1/3">
         <img
           src={image}
           alt={name}
-          className="w-full h-48 object-cover rounded-t-lg"
+          className="object-cover w-full h-48 md:h-full"
         />
-        <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
-          <p className="text-sm font-medium text-white">Haz clic para más detalles</p>
-        </div>
       </div>
 
       {/* Contenido */}
-      <div className="p-6">
-        <h5 className="text-xl font-bold mb-2">{name}</h5>
-        <p className="text-sm text-gray-300 mb-4">
-          <span className="font-medium text-gray-100">Tecnologías:</span> {technologies.join(", ")}
-        </p>
-        <p className="text-sm text-gray-400 mb-4">{description}</p> {/* Descripción del proyecto */}
+      <div className="p-6 flex flex-col justify-between w-full md:w-2/3">
+        <div>
+          <h5 className="text-xl font-medium mb-2">{name}</h5>
+          <p className="text-sm text-gray-300 mb-4">
+            <span className="font-medium text-gray-100">Tecnologías:</span>{" "}
+            {technologies_img_url.map((tech, index) => (
+              <Image
+                key={index}
+                src={`logos/${tech}`}
+                alt={technologies[index]}
+                width={24}
+                height={24}
+                className="inline-block w-6 h-6 mr-1"
+              />
+            ))}
+            {technologies.join(", ")}
+          </p>
+          <p className="text-sm font-mono text-gray-400 mb-4">{description}</p>
+        </div>
         <div className="flex justify-between items-center">
           <a
             href={github}
@@ -48,9 +61,7 @@ function Card({ image, name, technologies, description, github, demo }: CardProp
               Ver demo
             </a>
           ) : (
-            <p className="text-sm font-medium text-green-400 hover:text-green-600 transition-colors">
-              Próximamente...
-            </p>
+            <p className="text-sm font-medium text-gray-400">Próximamente...</p>
           )}
         </div>
       </div>
@@ -59,5 +70,4 @@ function Card({ image, name, technologies, description, github, demo }: CardProp
 }
 
 export default Card;
-
 
