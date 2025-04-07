@@ -1,6 +1,7 @@
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Image from "next/image";
 
 function Contact() {
   return (
@@ -44,33 +45,53 @@ function Contact() {
               href="https://linkedin.com/in/santiagogrj"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-700 hover:text-blue-800"
+              className="hover:scale-110 transition-transform"
             >
-              <div className="w-8 h-8 bg-blue-700 rounded-full"></div>
+              <Image
+                src="/logos/linkedin.svg"
+                alt="LinkedIn"
+                width={32}
+                height={32}
+              />
             </a>
             <a
               href="https://github.com/SantiagoGRJ"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-800 hover:text-gray-900"
+              className="hover:scale-110 transition-transform"
             >
-              <div className="w-8 h-8 bg-gray-400 rounded-full"></div>
+              <Image
+                src="/logos/github.svg"
+                alt="GitHub"
+                width={32}
+                height={32}
+              />
             </a>
             <a
               href="https://instagram.com/santiagojavig"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-pink-500 hover:text-pink-600"
+              className="hover:scale-110 transition-transform"
             >
-              <div className="w-8 h-8 bg-pink-500 rounded-full"></div>
+              <Image
+                src="/logos/instagram.svg"
+                alt="Instagram"
+                width={32}
+                height={32}
+              />
             </a>
             <a
               href="https://twitter.com/SantiagoGRJ1"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-500"
+              className="hover:scale-110 transition-transform"
             >
-              <div className="w-8 h-8 bg-blue-400 rounded-full"></div>
+              <Image
+                src="/logos/x.svg"
+                alt="Twitter"
+                width={32}
+                height={32}
+              />
             </a>
           </CardContent>
         </Card>
