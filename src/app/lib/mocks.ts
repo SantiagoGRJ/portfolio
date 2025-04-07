@@ -8,6 +8,10 @@ interface MockedProyects {
     github: string;
     demo: string;
 }
+interface MockedImages {
+    src: string;
+    alt: string;
+}
 
 export const mockedProyectsNode: MockedProyects[] = [
     {
@@ -42,7 +46,7 @@ export const mockedProyectsLaravel: MockedProyects[] = [
         description: 'CineOpinion is a web application that allows users to watch, search movies, they can change the language of the movies and about the movies they have seen.',
         image: '/not-found.jpeg',
         tecnologies: ['Laravel', 'Laravel-Lang', 'TMDB', 'Tailwindcss'],
-        github:'https://github.com/SantiagoGRJ/cineopinion-proyecto',
+        github: 'https://github.com/SantiagoGRJ/cineopinion-proyecto',
         demo: '#'
 
     },
@@ -62,6 +66,38 @@ export const mockedProyectsLaravel: MockedProyects[] = [
         github: 'https://github.com/SantiagoGRJ/learn-livewire',
         demo: '#'
     }
+
+]
+
+export const mockedImagesFrameworks: MockedImages[] = [
     
+    { src: '/logos/node-js.svg', alt: 'NodeJS' },
+    { src: '/logos/express-js.svg', alt: 'ExpressJS' },
+    { src: '/logos/php.svg', alt: 'PHP' },
+    { src: '/logos/laravel.svg', alt: 'Laravel' },
+    { src: '/logos/livewire.svg', alt: 'Laravel Livewire' },
+    { src: '/logos/prisma.svg', alt: 'Prisma ORM' },
+
+    
+    { src: '/logos/postgresql.svg', alt: 'PostgreSQL' },
+    { src: '/logos/mongodb.svg', alt: 'MongoDB' },
+    { src: '/logos/mysql.svg', alt: 'MySQL' },
+
+    { src: '/logos/html.svg', alt: 'Html' },
+    { src: '/logos/css.svg', alt: 'Css' },
+    { src: '/logos/tailwindcss.svg', alt: 'TailwindCSS' },
+    { src: '/logos/javascript.svg', alt: 'JavaScript' },
+    { src: '/logos/typescript.svg', alt: 'TypeScript' },
+    { src: '/logos/react.svg', alt: 'React' },
+    { src: '/logos/next-js.svg', alt: 'NextJS' },
+    { src: '/logos/angular.svg', alt: 'Angular' },
+    { src: '/logos/vite.svg', alt: 'Vite' },
+
+    
+    { src: '/logos/postman.svg', alt: 'Postman' },
+    { src: '/logos/git.svg', alt: 'Git' },
+    { src: '/logos/github.svg', alt: 'GitHub' },
+    
+
 ]
 
