@@ -34,12 +34,12 @@ function Home({}: Props) {
         </div>
 
         <div>
-          <Button
-            variant="outline"
-            className="px-12 py-4 text-lg text-white border-white hover:bg-white hover:text-gray-900"
+          <a 
+            href="#about-me"
+            className="px-12 py-4 text-lg text-black rounded-2xl bg-slate-300 hover:bg-blue-100 hover:text-gray-900 cursor-pointer"
           >
             Acerca de Mi
-          </Button>
+          </a>
         </div>
       </div>
     </section>
