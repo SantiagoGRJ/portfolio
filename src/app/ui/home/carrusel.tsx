@@ -26,14 +26,14 @@ function Carrosel({}: Props) {
     }}>
       <CarouselContent>
         {mockedImagesFrameworks.map((item, index) => (
-          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+          <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3  flex justify-center">
             <Image
               src={item.src}
               alt={item.alt}
               key={index}
               width={150}
               height={150}
-              className="object-cover "
+              className="cursor-pointer hover:scale-105 transition-transform"
               priority
             />
           </CarouselItem>
