@@ -1,7 +1,17 @@
-import Image from "next/image";
 
-export default function Home() {
+import AboutMe from "sections/about-me/about-me";
+import Contact from "sections/contact/contact";
+import Home from "sections/home";
+import Projects from "sections/projects/projects";
+
+
+export default function Page() {
   return (
-   <div className=""></div>
+   <>
+   <Home />
+   <Projects/>
+   <Contact/>
+   <AboutMe />
+   </>
   );
 }
