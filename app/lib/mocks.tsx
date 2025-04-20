@@ -85,8 +85,9 @@ export const mockedImagesFrameworks: MockedImages[] = [
   { src: "/logos/prisma.svg", alt: "Prisma ORM" },
 
   { src: "/logos/postgresql.svg", alt: "PostgreSQL" },
-  { src: "/logos/mongodb.svg", alt: "MongoDB" },
+  { src: "/logos/mongodb.svg", alt: "MongoDB - Atlas" },
   { src: "/logos/mysql.svg", alt: "MySQL" },
+  { src:"/logos/neon.svg",alt:"Neon Serverless Postgres" },
 
   { src: "/logos/html.svg", alt: "Html" },
   { src: "/logos/css.svg", alt: "Css" },
