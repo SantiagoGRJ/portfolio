@@ -56,24 +56,25 @@ export default function Navbar() {
                 CV <ChevronDown size={16} className="ml-1" />
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-56">
+              <DropdownMenuItem asChild>
+                  <Link href="/santiago-gomez-resume.pdf" className="flex items-center">
+                    <FileText size={16} className="mr-2" />
+                    <span>Resume (English)</span>
+                  </Link>
+                </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link href="#cv-js" className="flex items-center">
+                  <Link href="/cv-js-ts.pdf" className="flex items-center">
                     <FileText size={16} className="mr-2" />
                     <span>JavaScript/TypeScript</span>
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
-                  <Link href="#cv-php" className="flex items-center">
+                  <Link href="/cv-php-laravel.pdf" className="flex items-center">
                     <FileText size={16} className="mr-2" />
                     <span>PHP/Laravel</span>
                   </Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem asChild>
-                  <Link href="#cv-en" className="flex items-center">
-                    <FileText size={16} className="mr-2" />
-                    <span>Resume (English)</span>
-                  </Link>
-                </DropdownMenuItem>
+                
               </DropdownMenuContent>
             </DropdownMenu>
           </nav>
@@ -113,8 +114,16 @@ export default function Navbar() {
             <div className="border-t border-gray-100 pt-3">
               <p className="text-sm font-medium text-gray-500 mb-2">Curriculum Vitae:</p>
               <div className="flex flex-col space-y-2 pl-2">
+              <Link
+                  href="/santiago-gomez-resume.pdf"
+                  className="text-gray-700 hover:text-black transition-colors flex items-center"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <FileText size={16} className="mr-2" />
+                  <span>Resume (English)</span>
+                </Link>
                 <Link
-                  href="#cv-js"
+                  href="/cv-js-ts.pdf"
                   className="text-gray-700 hover:text-black transition-colors flex items-center"
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -122,21 +131,14 @@ export default function Navbar() {
                   <span>JavaScript/TypeScript</span>
                 </Link>
                 <Link
-                  href="#cv-php"
+                  href="/cv-php-laravel.pdf"
                   className="text-gray-700 hover:text-black transition-colors flex items-center"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   <FileText size={16} className="mr-2" />
                   <span>PHP/Laravel</span>
                 </Link>
-                <Link
-                  href="#cv-en"
-                  className="text-gray-700 hover:text-black transition-colors flex items-center"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  <FileText size={16} className="mr-2" />
-                  <span>Resume (English)</span>
-                </Link>
+               
               </div>
             </div>
           </nav>

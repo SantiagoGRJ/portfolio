@@ -13,7 +13,7 @@ export default function ProjectsSection() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">Mis Proyectos</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Una colección de mis trabajos en desarrollo web, incluyendo proyectos con TypeScript, React, Next.js,
+            Una muestra de mis trabajos en desarrollo web, incluyendo proyectos con TypeScript, React, Next.js,
             Express, Node.js, PHP y Laravel.
           </p>
         </div>
