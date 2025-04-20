@@ -22,6 +22,7 @@ export default function Home() {
               className="object-cover"
               priority
             />
+            
           </div>
           <h1 className="text-3xl font-bold mb-2">Santiago Gomez</h1>
           <p className="text-gray-600 mb-8">Ingeniero de Software | Back-End | Algo de Front-End</p>

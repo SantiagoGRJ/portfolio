@@ -99,9 +99,10 @@ export const mockedImagesFrameworks: MockedImages[] = [
   { src: "/logos/angular.svg", alt: "Angular" },
   { src: "/logos/vite.svg", alt: "Vite" },
 
-  { src: "/logos/postman.svg", alt: "Postman" },
+  {src: "/logos/vercel.svg", alt:"Vercel"},
   { src: "/logos/git.svg", alt: "Git" },
   { src: "/logos/github.svg", alt: "GitHub" },
+  { src: "/logos/postman.svg", alt: "Postman" },
 ]
 
 export type { MockedProyects }
