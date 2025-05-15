@@ -63,6 +63,12 @@ export default function Navbar() {
                   </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild>
+                  <Link href="/cv-santiago-gomez.pdf" className="flex items-center">
+                    <FileText size={16} className="mr-2" />
+                    <span>CV (Español)</span>
+                  </Link>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild>
                   <Link href="/cv-js-ts.pdf" className="flex items-center">
                     <FileText size={16} className="mr-2" />
                     <span>JavaScript/TypeScript</span>
