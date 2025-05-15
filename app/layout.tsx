@@ -8,21 +8,21 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Santiago Gomez | Portfolio",
   description:
-    "Portfolio personal de Santiago Gomez, Ingeniero de Software enfocado en Back-End y Front-End",
-  creator: "Santiago Gomez",
+    "Portfolio de Santiago Javier Gomez Rojas, Ingeniero de Software enfocado en Back-End y Front-End",
+  creator: "Santiago Javier Gomez Rojas",
   openGraph: {
     title: "Santiago Gomez | Portfolio",
     description:
-      "Portfolio personal de Santiago Gomez, Ingeniero de Software enfocado en Back-End y Front-End",
+      "Portfolio de Santiago Javier Gomez Rojas, Ingeniero de Software enfocado en Back-End y Front-End",
     url: "https://portfolio-santiago-javier-gomez-rojas-projects.vercel.app/", 
-    siteName: "Santiago Gomez Portfolio",
+    siteName: "Santiago Gomez | Portfolio",
     locale: "es_ES",
     type: "website",
   },
   twitter: {
     card: "summary",
     title: "Santiago Gomez | Portfolio",
-    description: "Desarrollador Full Stack en Aplicaciones web.",
+    description: "Desarrollador Full Stack en aplicaciones web.",
     creator: "@SantiagoGRJ1", 
   },
 };
